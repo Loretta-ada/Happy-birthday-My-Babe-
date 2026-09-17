@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Happy Birthday, My Babe ❤️</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Georgia, "Times New Roman", serif;
+      background: linear-gradient(135deg, #fff0f5, #ffe4ec, #fff8fb);
+      color: #542536;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px 15px;
+      overflow-x: hidden;
+    }
+
+    .hearts {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .heart {
+      position: absolute;
+      bottom: -30px;
+      font-size: 20px;
+      animation: float 7s linear infinite;
+      opacity: 0.6;
+    }
+
+    .heart:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .heart:nth-child(2) { left: 30%; animation-delay: 2s; }
+    .heart:nth-child(3) { left: 55%; animation-delay: 4s; }
+    .heart:nth-child(4) { left: 80%; animation-delay: 1s; }
+    .heart:nth-child(5) { left: 90%; animation-delay: 3s; }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) rotate(0);
+        opacity: 0;
+      }
+      20% {
+        opacity: 0.7;
+      }
+      100% {
+        transform: translateY(-110vh) rotate(25deg);
+        opacity: 0;
+      }
+    }
+
+    .card {
+      width: 100%;
+      max-width: 520px;
+      background: rgba(255,255,255,0.82);
+      border: 1px solid rgba(255,255,255,0.9);
+      border-radius: 28px;
+      padding: 40px 25px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(120, 45, 75, 0.15);
+      backdrop-filter: blur(10px);
+      position: relative;
+      z-index: 2;
+    }
+
+    .small {
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #a55b76;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin: 0 0 12px;
+      color: #7b2948;
+    }
+
+    h2 {
+      font-size: 25px;
+      color: #8e3c59;
+      margin-top: 10px;
+    }
+
+    .date {
+      display: inline-block;
+      margin: 10px 0 25px;
+      padding: 8px 16px;
+      border-radius: 20px;
+      background: #fff0f5;
+      color: #a34768;
+      font-size: 14px;
+    }
+
+    .divider {
+      width: 60px;
+      height: 2px;
+      background: #d98ba7;
+      margin: 25px auto;
+    }
+
+    .note {
+      text-align: left;
+      line-height: 1.8;
+      font-size: 17px;
+    }
+
+    .highlight {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: #8b3151;
+      margin: 25px 0;
+    }
+
+    .always {
+      font-size: 27px;
+      font-weight: bold;
+      color: #a33e61;
+      text-align: center;
+      margin: 10px 0 25px;
+    }
+
+    .ending {
+      font-size: 16px;
+      line-height: 1.7;
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .heart-main {
+      font-size: 45px;
+      margin-bottom: 10px;
+      animation: pulse 1.7s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.12);
+      }
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 13px;
+      color: #a66a7f;
+    }
+
+    @media (max-width: 400px) {
+      .card {
+        padding: 32px 20px;
+      }
+
+      h1 {
+        font-size: 31px;
+      }
+
+      .note {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="hearts">
+    <div class="heart">♡</div>
+    <div class="heart">♥</div>
+    <div class="heart">♡</div>
+    <div class="heart">♥</div>
+    <div class="heart">♡</div>
+  </div>
+
+  <main class="card">
+
+    <div class="heart-main">💗</div>
+
+    <div class="small">
+      A little something for you...
+    </div>
+
+    <h1>Happy Birthday, My Babe</h1>
+
+    <div class="date">
+      September 20 🎂
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="note">
+
+      <p>
+        I just want you to know that I love how
+        <strong>super cool you are!</strong>
+      </p>
+
+      <p>
+        I wish you nothing but happiness and peace
+        that can't be taken away by any human.
+      </p>
+
+      <p>
+        I wish you <strong>excel and bloom</strong>
+        all the days of your life.
+      </p>
+
+      <p>
+        I wish you beautiful moments, genuine laughter,
+        and all the good things you deserve.
+      </p>
+
+      <div class="highlight">
+        And most importantly...
+      </div>
+
+      <p>
+        I hope you always know that
+      </p>
+
+      <div class="always">
+        I will always root for you! ❤️
+        <br>
+        Always.
+      </div>
+
+      <p class="ending">
+        No matter where life takes us, I'll be somewhere
+        in your corner, cheering you on.
+      </p>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <h2>Happy birthday, my girl! 🥂</h2>
+
+    <div class="ending">
+      Here's to another beautiful year of you. 💕
+    </div>
+
+    <footer>
+      Made with love, just for you.
+    </footer>
+
+  </main>
+
+</body>
+</html>
